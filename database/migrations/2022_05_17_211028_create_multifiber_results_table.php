@@ -13,7 +13,7 @@ class CreateMultifiberResultsTable extends Migration
      */
     public function up()
     {
-        Schema::create('multifiberresults', function (Blueprint $table) {
+        Schema::create('MultifiberResults', function (Blueprint $table) {
             $table->id();
             $table->string('PartNumber');
             $table->string('SerialNumber')->unique();
@@ -47,7 +47,7 @@ class CreateMultifiberResultsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('multifiber_results');
+        Schema::dropIfExists('MultifiberResults');
     }
 }
 //	WaveLength,	DT,	Tries,	Conn,	TesterID,	UserId,	RLA1,	RLB1,	RLA2,	RLB2)
