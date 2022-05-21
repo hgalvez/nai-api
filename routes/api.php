@@ -45,7 +45,6 @@ Route::post('/login', [userController::class, 'login']);
 //Route::get('register', 'App\Http\Controllers\Api\RegisterController@register');
 Route::post('/register', 'App\Http\Controllers\userController@register');
 
-});
 
 
 
