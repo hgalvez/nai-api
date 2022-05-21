@@ -1,10 +1,11 @@
 <?php
 
-use App\http\Controllers\MultifiberResultsController;
-use App\http\Controllers\naiassemblyController;
-use App\http\Controllers\userController;
+use App\Http\Controllers\MultifiberResultsController;
+use App\Http\Controllers\naiassemblyController;
+use App\Http\Controllers\userController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,11 +41,13 @@ Route::post('/logout', [userController::class, 'logout']);
 });
 
 //public Routes
-Route::post('/register', [userController::class, 'register']);
-//Route::post('/login', [userController::class, 'login']);
-Route::post('/login', function(){
-    return 'uta mi loco';
-});
+//Route::post('/register', [userController::class, 'register']);
+Route::post('/login', [userController::class, 'login']);
+
+
+//Route::get('register', 'App\Http\Controllers\Api\RegisterController@register');
+Route::post('/register', 'App\Http\Controllers\userController@register');
+
 
 
 
