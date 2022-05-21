@@ -41,7 +41,10 @@ Route::post('/logout', [userController::class, 'logout']);
 
 //public Routes
 Route::post('/register', [userController::class, 'register']);
-Route::post('/login', [userController::class, 'login']);
+//Route::post('/login', [userController::class, 'login']);
+Route::post('/login', function(){
+    return 'uta mi loco';
+});
 
 
 
