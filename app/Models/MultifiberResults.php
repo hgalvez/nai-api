@@ -11,25 +11,25 @@ class MultifiberResults extends Model
 
     protected $table = 'MultifiberResults';
     protected $fillable = [
-            'PartNumber',
-            'SerialNumber',
-            'LimitID',
-            'ILResult_1',
-            'ILResult_2',
-            'BRResult_1',
-            'BRResult_2',
-            'SW1',
-            'SW2',
-            'WaveLength',
-            'DT',
-            'Tries',
-            'Conn',
-            'TesterID',
-            'UserId',
-            'RLA1',
-            'RLB1',
-            'RLA2',
-            'RLB2'
+            'partnumber',
+            'serialnumber',
+            'limitid',
+            'ilresult_1',
+            'ilresult_2',
+            'brresult_1',
+            'brresult_2',
+            'sw1',
+            'sw2',
+            'waveLength',
+            'dt',
+            'tries',
+            'conn',
+            'testerid',
+            'userid',
+            'rla1',
+            'rlb1',
+            'rla2',
+            'rlb2'
     ];
     
 }
