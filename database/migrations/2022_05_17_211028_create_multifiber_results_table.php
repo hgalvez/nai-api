@@ -13,27 +13,27 @@ class CreateMultifiberResultsTable extends Migration
      */
     public function up()
     {
-        Schema::create('multifiber_results', function (Blueprint $table) {
+        Schema::create('multifiberresults', function (Blueprint $table) {
             $table->id();
             $table->string('PartNumber');
-            $table->string('SerialNumber')->unique;
-            $table->string('LimitID')->nullable;
-            $table->string('ILResult_1')->nullable;
-            $table->string('ILResult_2')->nullable;
-            $table->string('BRResult_1')->nullable;
-            $table->string('BRResult_2')->nullable;
-            $table->string('SW1')->nullable;
-            $table->string('SW2')->nullable;
-            $table->string('WaveLength')->nullable;
-            $table->timestamp('DT')->nullable;
-            $table->string('Tries')->nullable;
-            $table->string('Conn')->nullable;
-            $table->string('TesterID')->nullable;
-            $table->string('UserId')->nullable;
-            $table->string('RLA1')->nullable;
-            $table->string('RLB1')->nullable;
-            $table->string('RLA2')->nullable;
-            $table->string('RLB2')->nullable;
+            $table->string('SerialNumber')->unique();
+            $table->string('LimitID')->nullable();
+            $table->string('ILResult_1')->nullable();
+            $table->string('ILResult_2')->nullable();
+            $table->string('BRResult_1')->nullable();
+            $table->string('BRResult_2')->nullable();
+            $table->string('SW1')->nullable();
+            $table->string('SW2')->nullable();
+            $table->string('WaveLength')->nullable();
+            $table->timestamp('DT')->nullable();
+            $table->string('Tries')->nullable();
+            $table->string('Conn')->nullable();
+            $table->string('TesterID')->nullable();
+            $table->string('UserId')->nullable();
+            $table->string('RLA1')->nullable();
+            $table->string('RLB1')->nullable();
+            $table->string('RLA2')->nullable();
+            $table->string('RLB2')->nullable();
             
             
             $table->timestamps();
