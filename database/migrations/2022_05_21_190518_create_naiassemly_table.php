@@ -13,7 +13,7 @@ class CreateNaiassemlyTable extends Migration
      */
     public function up()
     {
-        Schema::create('naiassemly', function (Blueprint $table) {
+        Schema::create('naiassembly', function (Blueprint $table) {
             $table->id();
             $table->string('SerialNumber')->unique;
             $table->string('PartNumber');
