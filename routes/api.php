@@ -40,10 +40,11 @@ Route::post('/logout', [userController::class, 'logout']);
 });
 
 //public Routes
-Route::post('/register', [userController::class, 'register']);
-//Route::post('/login', [userController::class, 'login']);
-Route::post('/login', function(){
-    return 'uta mi loco';
+//Route::post('/register', [userController::class, 'register']);
+Route::post('/login', [userController::class, 'login']);
+//Route::get('register', 'App\Http\Controllers\Api\RegisterController@register');
+Route::post('/register', 'App\Http\Controllers\userController@register');
+
 });
 
 
